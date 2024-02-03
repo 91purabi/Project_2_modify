@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:project_modify/screens/project_details_screen/project_details_screen.dart';
 import 'package:project_modify/screens/project_details_screen/widgets/project_details_card_widget/project_details_card_horizontal_list_item_widget.dart';
-import 'package:project_modify/screens/project_details_screen/widgets/project_header_table_card.dart';
 
-class ProjectDetailsCardHorizontalWidget extends StatelessWidget {
-  const ProjectDetailsCardHorizontalWidget({super.key});
+class ProjectDetailsCardHorizontalListWidget extends StatelessWidget {
+  const ProjectDetailsCardHorizontalListWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: 130,
+        height: 150,
         child: ListView.builder(
             shrinkWrap: true,
             itemCount: 8,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
-              return Column(
+              return const Column(
                 children: [
                   ProjectDetailsCardHorizontalListItemWidget(),
                 ],

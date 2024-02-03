@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_modify/screens/project_details_screen/widgets/project_details_card_widget/project_details_card_widget.dart';
+import 'package:project_modify/screens/project_details_screen/widgets/project_header_table_card.dart';
 
 class ProjectDetailsScreen extends StatelessWidget {
   const ProjectDetailsScreen({super.key});
@@ -8,10 +9,12 @@ class ProjectDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Horizontal ListView Scrolling'),
+        title: const Text('Horizontal ListView Scrolling'),
       ),
-      body: Column(children: [
-        ProjectDetailsCardWidget()
+      body: const Column(children: [
+        //ProjectDetailsCardHorizontalListWidget(),
+        // ProjectHeaderTableCard(),
+        ProjectDetailsCardWidget(),
         // ListView.builder(
         //   itemCount: 3,
         //   shrinkWrap: true,
