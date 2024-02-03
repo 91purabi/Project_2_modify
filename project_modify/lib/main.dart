@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project_modify/main_screen.dart';
 import 'package:project_modify/screens/home_screen/home_screen.dart';
 import 'package:project_modify/screens/project_details_screen/project_details_screen.dart';
+import 'package:project_modify/screens/project_details_screen/widgets/project_header_table_card.dart';
 
 void main() {
   runApp(const MainScreeen());
@@ -13,7 +15,9 @@ class MainScreeen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       //home: HomeScreen(),
-      home: ProjectDetailsScreen(),
+      //home: ProjectDetailsScreen(),
+      //home: ProjectHeaderTableCard(),
+      home: ThirdTaskB(),
     );
   }
 }
