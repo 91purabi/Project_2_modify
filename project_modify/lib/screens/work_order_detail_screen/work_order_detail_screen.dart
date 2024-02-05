@@ -22,15 +22,34 @@ class _WorkOrderDetailsScreenState extends State<WorkOrderDetailsScreen> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Container(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              //crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+                      height: 40,
+                      width: 400,
+                      color: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(
+                          'Road Work',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 15),
+                        ),
+                      )),
+                ),
                 Stack(
                   children: [
                     Image.network(
-                        'https://images.expertreviews.co.uk/wp-content/uploads/2020/12/best_gaming_keyboard_-_lead1_0.jpg'),
+                      'https://images.expertreviews.co.uk/wp-content/uploads/2020/12/best_gaming_keyboard_-_lead1_0.jpg',
+                      height: 170,
+                      width: 360,
+                      fit: BoxFit.fill,
+                    ),
                     Positioned(
                       left: 0,
                       bottom: 0,
@@ -49,7 +68,7 @@ class _WorkOrderDetailsScreenState extends State<WorkOrderDetailsScreen> {
                   ],
                 ),
                 const Padding(
-                  padding: EdgeInsets.all(38.0),
+                  padding: EdgeInsets.all(25.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -64,18 +83,21 @@ class _WorkOrderDetailsScreenState extends State<WorkOrderDetailsScreen> {
                     ],
                   ),
                 ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    CommonProgressAndCountWidget(
-                        progressColor: Colors.orange,
-                        progressCountText: '100/100',
-                        progressCountValue: 100 / 100),
-                    CommonProgressAndCountWidget(
-                        progressColor: Colors.purple,
-                        progressCountText: '100/100',
-                        progressCountValue: 50 / 100),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CommonProgressAndCountWidget(
+                          progressColor: Colors.orange,
+                          progressCountText: '75/100',
+                          progressCountValue: 100 / 100),
+                      CommonProgressAndCountWidget(
+                          progressColor: Colors.purple,
+                          progressCountText: '100/100',
+                          progressCountValue: 50 / 100),
+                    ],
+                  ),
                 ),
                 const SizedBox(
                   height: 20,
@@ -157,7 +179,7 @@ class _WorkOrderDetailsScreenState extends State<WorkOrderDetailsScreen> {
                               count: '20/45',
                             ),
                             ProjectAdditionalInfoTitleAndCountWidget(
-                              title: 'W.o Budget',
+                              title: 'W.O Budget',
                               count: '1402/153',
                             ),
                           ],
