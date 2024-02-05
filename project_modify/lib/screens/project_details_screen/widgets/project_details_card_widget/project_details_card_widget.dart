@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:project_modify/screens/project_details_screen/widgets/dummy/dummy_title_count.dart';
-import 'package:project_modify/screens/project_details_screen/widgets/project_details_card_widget/project_details_card_horizontal_list_widget.dart';
+import 'package:project_modify/screens/project_details_screen/widgets/dummy/project_details_add_info_widget.dart';
 
 import '../project_header_table_card.dart';
+import 'project_details_card_horizontal_list_widget.dart';
 
 class ProjectDetailsCardWidget extends StatelessWidget {
   const ProjectDetailsCardWidget({super.key});
@@ -21,10 +21,10 @@ class ProjectDetailsCardWidget extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              // ProjectHeaderTableCard(),
-              // ProjectDetailsCardHorizontalListWidget(),
+              ProjectHeaderTableCard(),
+              ProjectDetailsCardHorizontalListWidget(),
               //  ProjectAdditionalInformationWidget(),
-              DummyTitleCount(),
+              ProjectDetailsAdditionalInfoWidget(),
             ],
           ),
         ),

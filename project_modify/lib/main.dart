@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_modify/screens/project_details_screen/project_details_screen.dart';
+import 'package:project_modify/stack_widget_example/stack_widget_circle.dart';
+//import 'package:project_modify/stack_widget_example/stack_circle_widget.dart';
 
 void main() {
   runApp(const MainScreeen());
@@ -13,6 +15,8 @@ class MainScreeen extends StatelessWidget {
     return MaterialApp(
       //home: HomeScreen(),
       home: ProjectDetailsScreen(),
+      // home: StackWidgetExample(),
+      //home: StackWidgetCircle(),
     );
   }
 }

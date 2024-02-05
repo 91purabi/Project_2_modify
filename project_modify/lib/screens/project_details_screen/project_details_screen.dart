@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_modify/screens/project_details_screen/widgets/project_details_card_widget/project_details_card_widget.dart';
-import 'package:project_modify/screens/project_details_screen/widgets/project_header_table_card.dart';
+import 'package:project_modify/screens/work_order_detail_screen/work_order_detail_screen.dart';
 
 class ProjectDetailsScreen extends StatelessWidget {
   const ProjectDetailsScreen({super.key});
@@ -11,10 +11,19 @@ class ProjectDetailsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Horizontal ListView Scrolling'),
       ),
-      body: const Column(children: [
+      body: Column(children: [
         //ProjectDetailsCardHorizontalListWidget(),
         // ProjectHeaderTableCard(),
         ProjectDetailsCardWidget(),
+        TextButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return WorkOrderDetailsScreen();
+                },
+              ));
+            },
+            child: Text('Go to WO Details Screen'))
         // ListView.builder(
         //   itemCount: 3,
         //   shrinkWrap: true,
